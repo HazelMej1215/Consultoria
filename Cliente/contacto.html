@@ -1,12 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Halo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Contactanos</h1>
-    
+
+
+  <header class="header">
+    <div class="logo">
+      <h1>Halo</h1>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="mv.html">Misión y Visión</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main>
+    <section class="contact">
+      <h2>Contáctanos</h2>
+      <p class="contact-intro">
+        Déjanos tus datos y tu mensaje. Nos pondremos en contacto contigo lo antes posible.
+      </p>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input 
+            type="text" 
+            id="nombre" 
+            name="nombre" 
+            placeholder="Escribe tu nombre"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="correo">Correo electrónico</label>
+          <input 
+            type="email" 
+            id="correo" 
+            name="correo" 
+            placeholder="correo@ejemplo.com"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="nota">Nota</label>
+          <textarea 
+            id="nota" 
+            name="nota" 
+            rows="4"
+            placeholder="Escribe tu mensaje aquí"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Halo Consultoría. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
