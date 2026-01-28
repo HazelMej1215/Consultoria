@@ -1,0 +1,287 @@
+/* =====================================================
+   VARIABLES DE COLOR (IDENTIDAD HALO)
+===================================================== */
+:root {
+  --azul: #4da3ff;
+  --negro: #111111;
+  --gris: #6b7280;
+  --gris-claro: #e5e7eb;
+  --blanco: #ffffff;
+}
+
+/* =====================================================
+   RESET Y BASE
+===================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: var(--blanco);
+  color: var(--negro);
+  line-height: 1.6;
+}
+
+/* =====================================================
+   ENCABEZADO Y NAVEGACIÓN
+===================================================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--gris-claro);
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: var(--azul);
+  font-weight: 700;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--negro);
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+  background-color: var(--azul);
+  color: var(--blanco);
+}
+
+/* =====================================================
+   CONTENIDO GENERAL
+===================================================== */
+main {
+  padding: 40px 20px;
+}
+
+section {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+section p {
+  color: var(--gris);
+}
+
+/* =====================================================
+   BOTONES
+===================================================== */
+.btn {
+  display: inline-block;
+  background-color: var(--azul);
+  color: var(--blanco);
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* =====================================================
+   HERO (INICIO)
+===================================================== */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.hero-text h2 {
+  font-size: 34px;
+}
+
+.hero-text p {
+  margin: 14px 0;
+}
+
+/* =====================================================
+   MISIÓN Y VISIÓN
+===================================================== */
+.mv article {
+  margin-top: 22px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  border: 1px solid var(--gris-claro);
+}
+
+.mv h3 {
+  margin-bottom: 6px;
+  color: var(--azul);
+}
+
+/* =====================================================
+   EQUIPO
+===================================================== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.member {
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid var(--gris-claro);
+  background-color: var(--blanco);
+  text-align: center;
+}
+
+.member-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.member-photo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--azul);
+}
+
+.member h3 {
+  margin-bottom: 4px;
+}
+
+.role {
+  font-size: 14px;
+  color: var(--gris);
+  margin-bottom: 10px;
+}
+
+/* =====================================================
+   SERVICIOS (CARRUSEL)
+===================================================== */
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 340px;
+  gap: 18px;
+  overflow-x: auto;
+  padding-bottom: 14px;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 10px;
+}
+
+.service-card {
+  scroll-snap-align: start;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid var(--gris-claro);
+  background-color: var(--blanco);
+}
+
+.service-card h3 {
+  margin-bottom: 8px;
+  color: var(--azul);
+}
+
+.service-card ul {
+  margin: 10px 0 14px 18px;
+}
+
+.service-card li {
+  margin-bottom: 6px;
+}
+
+/* =====================================================
+   CONTACTO
+===================================================== */
+.contact {
+  max-width: 600px;
+}
+
+.contact-form {
+  margin-top: 20px;
+  display: grid;
+  gap: 14px;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--gris-claro);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--azul);
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+.footer {
+  border-top: 1px solid var(--gris-claro);
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: var(--gris);
+}
+
+/* =====================================================
+   RESPONSIVE (TELÉFONO)
+===================================================== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel {
+    grid-auto-columns: 85%;
+  }
+}
