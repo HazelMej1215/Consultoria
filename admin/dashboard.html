@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin | Dashboard</title>
+  <link rel="stylesheet" href="../shared/reset.css" />
+  <link rel="stylesheet" href="../shared/ui.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <h1 class="brand">Consultoría Web</h1>
+      <button id="logoutBtn" class="btn btn-ghost">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="row">
+        <h2 class="title-sm">Correos recibidos</h2>
+        <div class="row-actions">
+          <button id="refreshBtn" class="btn btn-ghost">Actualizar</button>
+          <button id="clearBtn" class="btn btn-danger">Borrar demo</button>
+        </div>
+      </div>
+
+      <div class="filters">
+        <input id="search" class="input" type="search" placeholder="Buscar por nombre, correo o texto..." />
+      </div>
+
+      <div id="empty" class="empty">
+        Aún no hay mensajes. (En demo se guardan desde el formulario del cliente).
+      </div>
+
+      <div id="list" class="list"></div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

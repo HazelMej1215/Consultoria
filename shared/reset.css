@@ -1,0 +1,9 @@
+*{ box-sizing:border-box; }
+html, body{ height:100%; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #f6f6fb;
+  color:#14141a;
+}
+a{ color:inherit; text-decoration:none; }

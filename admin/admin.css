@@ -1,0 +1,81 @@
+/* Admin específico (complementa shared/ui.css) */
+.topbar{
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.9);
+  border-bottom: 1px solid #e9e9ef;
+  backdrop-filter: blur(10px);
+}
+.topbar-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 14px 0;
+}
+.brand{ font-size: 16px; margin: 0; }
+
+.row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.row-actions{ display:flex; gap: 10px; flex-wrap: wrap; }
+
+.filters{ margin: 10px 0 14px; }
+
+.list{
+  display: grid;
+  gap: 12px;
+}
+.msg-card{
+  border: 1px solid #ececf4;
+  border-radius: 14px;
+  padding: 14px;
+  background: #fff;
+}
+.msg-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.msg-title{
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+.msg-meta{
+  font-size: 12px;
+  opacity: .75;
+  margin-top: 4px;
+}
+.msg-body{
+  margin: 8px 0 0;
+  white-space: pre-wrap;
+  line-height: 1.45;
+}
+.badge{
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #e7e7f3;
+  background: #fafafe;
+}
+.empty{
+  padding: 14px;
+  border: 1px dashed #d7d7ea;
+  border-radius: 14px;
+  display: none;
+}
+.msg{
+  margin: 10px 0 0;
+  font-size: 13px;
+}
+.hint{
+  margin-top: 14px;
+  font-size: 12px;
+  opacity: .8;
+}

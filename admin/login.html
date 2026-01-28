@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin | Login</title>
+  <link rel="stylesheet" href="../shared/reset.css" />
+  <link rel="stylesheet" href="../shared/ui.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1 class="title">Panel Administrativo</h1>
+      <p class="subtitle">Inicia sesión para consultar los correos recibidos.</p>
+
+      <form id="loginForm" class="form">
+        <label class="label">
+          Usuario
+          <input id="user" class="input" type="text" placeholder="admin" required />
+        </label>
+
+        <label class="label">
+          Contraseña
+          <input id="pass" class="input" type="password" placeholder="••••••••" required />
+        </label>
+
+        <button class="btn" type="submit">Entrar</button>
+        <p id="loginMsg" class="msg"></p>
+      </form>
+
+      <div class="hint">
+        <span>Demo:</span> usuario <b>admin</b> / contraseña <b>1234</b>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
