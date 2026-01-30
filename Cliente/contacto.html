@@ -7,14 +7,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
   <header class="header">
-    <div class="logo">
-      <h1>Halo</h1>
-    </div>
+    <a class="logo" href="index.html" aria-label="Ir a inicio">
+      <img src="img/halo.jpeg" alt="Halo Consultoría">
+    </a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Navegación principal">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="mv.html">Misión y Visión</a></li>
@@ -26,46 +24,29 @@
     </nav>
   </header>
 
-  
-  <main>
-    <section class="contact">
+  <main class="container">
+    <section class="page-head">
       <h2>Contáctanos</h2>
-      <p class="contact-intro">
-        Déjanos tus datos y tu mensaje. Nos pondremos en contacto contigo lo antes posible.
-      </p>
+      <p>Completa el formulario y te responderemos lo antes posible.</p>
+    </section>
 
-      <form class="contact-form" action="#" method="post">
-        <div class="form-group">
-          <label for="nombre">Nombre</label>
-          <input 
-            type="text" 
-            id="nombre" 
-            name="nombre" 
-            placeholder="Escribe tu nombre"
-            required
-          >
-        </div>
+    <section class="form-wrap card">
+      <form class="contact-form" action="#" method="post" autocomplete="on">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+          </div>
 
-        <div class="form-group">
-          <label for="correo">Correo electrónico</label>
-          <input 
-            type="email" 
-            id="correo" 
-            name="correo" 
-            placeholder="correo@ejemplo.com"
-            required
-          >
+          <div class="form-group">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+          </div>
         </div>
 
         <div class="form-group">
           <label for="nota">Nota</label>
-          <textarea 
-            id="nota" 
-            name="nota" 
-            rows="4"
-            placeholder="Escribe tu mensaje aquí"
-            required
-          ></textarea>
+          <textarea id="nota" name="nota" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
         </div>
 
         <button type="submit" class="btn">Enviar</button>
@@ -74,8 +55,7 @@
   </main>
 
   <footer class="footer">
-    <p>© 2026 Halo Consultoría. Todos los derechos reservados.</p>
+    <p>© 2026 Halo Consultoría. Realizado por Hazel Mejia y Guadalupe Alondra.</p>
   </footer>
-
 </body>
 </html>

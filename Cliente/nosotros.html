@@ -7,13 +7,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header class="header">
-    <div class="logo">
-      <h1>Halo</h1>
-    </div>
+    <a class="logo" href="index.html" aria-label="Ir a inicio">
+      <img src="img/halo.jpeg" alt="Halo Consultoría">
+    </a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Navegación principal">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="mv.html">Misión y Visión</a></li>
@@ -25,46 +24,46 @@
     </nav>
   </header>
 
-  <main>
-    <section class="team">
-      <h2>Nuestro equipo de trabajo</h2>
-      <p class="team-intro">
-        Conoce a las personas detrás de Halo. Nos enfocamos en ofrecer soluciones prácticas,
-        claras y profesionales para cada cliente.
-      </p>
+  <main class="container">
+    <section class="page-head">
+      <h2>Conocemos Mas</h2>
+      <p>Somos un equipo de dos integrantes enfocados en soluciones claras, funcionales y profesionales.</p>
+    </section>
 
-      <div class="team-grid">
-        
-        <article class="member">
-          <div class="member-photo">
-            <img src="img/integrante1.jpg" alt="Foto de Integrante 1">
-          </div>
-          <h3>Hazel Mejia Cruz</h3>
-          <p class="role">Rol / Puesto</p>
-          <p class="bio">
-            Breve descripción: experiencia, habilidades principales y lo que aporta al equipo.
-          </p>
-        </article>
+    <section class="team-grid">
+      <article class="member card">
+        <img class="avatar" src="img/hazel.jpeg" alt="Integrante 1">
+        <h3>Hazel Mejia Cruz</h3>
+        <p class="muted">Desarrollador / Administractivo</p>
+        <p>Ing. Sistemas Computacionales: Proactivo, 4 años de experiencia.</p>
+        <div class="chips">
+          <span class="chip">Diseño</span>
+          <span class="chip">Desarrollo</span>
+          <span class="chip">Soporte</span>
+        </div>
+      </article>
 
-       
-        <article class="member">
-          <div class="member-photo">
-            <img src="img/integrante2.jpg" alt="Foto de Integrante 2">
-          </div>
-          <h3>Guadalupe Alondra Galvan Perez</h3>
-          <p class="role">Rol / Puesto</p>
-          <p class="bio">
-            Breve descripción: experiencia, habilidades principales y lo que aporta al equipo.
-          </p>
-        </article>
-      </div>
+      <article class="member card">
+        <img class="avatar" src="img/alondra.jpeg" alt="Integrante 2">
+        <h3>Guadalupe Alondra Galvan Perez</h3>
+        <p class="muted">Desarrollador / Administrador</p>
+        <p>Ing. Sistemas Computacionales: Proactiva, 4 años de experiencia.</p>
+        <div class="chips">
+          <span class="chip">Análisis</span>
+          <span class="chip">Bases de datos</span>
+          <span class="chip">Soporte</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="card highlight">
+      <h3>Nuestro enfoque</h3>
+      <p>Trabajamos con planificación, comunicación y mejora continua para entregar resultados de Alta calidad para todos nuestros clientes.</p>
     </section>
   </main>
 
-  
   <footer class="footer">
-    <p>© 2026 Halo Consultoría. Todos los derechos reservados.</p>
+    <p>© 2026 Halo Consultoría. Realizado por Hazel Mejia y Guadalupe Alondra.</p>
   </footer>
-
 </body>
 </html>

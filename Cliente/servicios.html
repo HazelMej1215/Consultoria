@@ -7,13 +7,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header class="header">
-    <div class="logo">
-      <h1>Halo</h1>
-    </div>
+    <a class="logo" href="index.html" aria-label="Ir a inicio">
+      <img src="img/halo.jpeg" alt="Halo Consultoría">
+    </a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Navegación principal">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="mv.html">Misión y Visión</a></li>
@@ -25,78 +24,84 @@
     </nav>
   </header>
 
-  <main>
-    <section class="services">
+  <main class="container">
+    <section class="page-head">
       <h2>Catálogo de servicios</h2>
-      <p class="services-intro">
-        Estos son algunos de los servicios que ofrecemos en Halo. Desliza para ver más.
-      </p>
-
-      
-      <div class="carousel" aria-label="Carrusel de servicios">
-        <article class="service-card">
-          <h3>Consultoría tecnológica</h3>
-          <p>Diagnóstico y mejora de procesos con soluciones prácticas.</p>
-          <ul>
-            <li>Análisis de requerimientos</li>
-            <li>Optimización de flujos</li>
-            <li>Recomendaciones técnicas</li>
-          </ul>
-          <a class="btn" href="contacto.html">Solicitar</a>
-        </article>
-
-        <article class="service-card">
-          <h3>Desarrollo web</h3>
-          <p>Sitios modernos, rápidos y adaptables a dispositivos móviles.</p>
-          <ul>
-            <li>Landing page</li>
-            <li>Panel administrativo</li>
-            <li>Integración con APIs</li>
-          </ul>
-          <a class="btn" href="contacto.html">Solicitar</a>
-        </article>
-
-        <article class="service-card">
-          <h3>Software a la medida</h3>
-          <p>Sistemas personalizados para tareas, control o seguimiento.</p>
-          <ul>
-            <li>Gestión de tareas</li>
-            <li>Control de usuarios</li>
-            <li>Reportes</li>
-          </ul>
-          <a class="btn" href="contacto.html">Solicitar</a>
-        </article>
-
-        <article class="service-card">
-          <h3>Base de datos</h3>
-          <p>Diseño, organización y consultas para datos confiables.</p>
-          <ul>
-            <li>Modelado relacional</li>
-            <li>Consultas SQL</li>
-            <li>Respaldo y seguridad</li>
-          </ul>
-          <a class="btn" href="contacto.html">Solicitar</a>
-        </article>
-
-        <article class="service-card">
-          <h3>Soporte y mantenimiento</h3>
-          <p>Correcciones, mejoras y monitoreo para que todo funcione.</p>
-          <ul>
-            <li>Actualizaciones</li>
-            <li>Corrección de errores</li>
-            <li>Mejoras continuas</li>
-          </ul>
-          <a class="btn" href="contacto.html">Solicitar</a>
-        </article>
-      </div>
-
-      <p class="hint">Tip: en celular desliza con el dedo. En PC puedes usar el scroll del mouse.</p>
+      <p>Desliza para explorar nuestro catalogo de servicios y ponte en Contacto con nosotros.</p>
     </section>
+
+    <section class="carousel" aria-label="Carrusel de servicios">
+      <article class="service-card card">
+        <h3>Consultoría tecnológica</h3>
+        <p>Diagnóstico y mejora de procesos con propuestas claras.</p>
+        <ul class="list">
+          <li>Levantamiento de requerimientos</li>
+          <li>Optimización de procesos</li>
+          <li>Plan de implementación</li>
+        </ul>
+        <a class="btn" href="contacto.html">Solicitar</a>
+      </article>
+
+      <article class="service-card card">
+        <h3>Desarrollo web</h3>
+        <p>Sitios modernos, rápidos y adaptables a dispositivos móviles.</p>
+        <ul class="list">
+          <li>Landing page</li>
+          <li>Panel administrativo</li>
+          <li>Integración con APIs</li>
+        </ul>
+        <a class="btn" href="contacto.html">Solicitar</a>
+      </article>
+
+      <article class="service-card card">
+        <h3>Software a la medida</h3>
+        <p>Sistemas personalizados para control, gestión y reportes.</p>
+        <ul class="list">
+          <li>Gestión de usuarios</li>
+          <li>Automatización de tareas</li>
+          <li>Reportes y exportaciones</li>
+        </ul>
+        <a class="btn" href="contacto.html">Solicitar</a>
+      </article>
+
+      <article class="service-card card">
+        <h3>Bases de datos</h3>
+        <p>Diseño, consultas y organización para datos confiables.</p>
+        <ul class="list">
+          <li>Modelado relacional</li>
+          <li>Consultas SQL</li>
+          <li>Respaldo y seguridad</li>
+        </ul>
+        <a class="btn" href="contacto.html">Solicitar</a>
+      </article>
+
+      <article class="service-card card">
+        <h3>Soporte y mantenimiento</h3>
+        <p>Actualizaciones, correcciones y mejoras continuas.</p>
+        <ul class="list">
+          <li>Monitoreo</li>
+          <li>Corrección de errores</li>
+          <li>Optimización</li>
+        </ul>
+        <a class="btn" href="contacto.html">Solicitar</a>
+      </article>
+
+      <article class="service-card card">
+        <h3>Redes</h3>
+        <p>conectividad segura, gestión automática de IPs (DHCP), almacenamiento, seguridad y alto rendimiento. </p>
+        <ul class="list">
+          <li>Servicios DHCP</li>
+          <li>Seguridad y VPN</li>
+          <li>Servicios en la Nube (Cloud)</li>
+        </ul>
+        <a class="btn" href="contacto.html">Solicitar</a>
+      </article>
+    </section>
+
   </main>
 
   <footer class="footer">
-    <p>© 2026 Halo Consultoría. Todos los derechos reservados.</p>
+    <p>© 2026 Halo Consultoría. Realizado por Hazel Mejia y Guadalupe Alondra.</p>
   </footer>
-
 </body>
 </html>

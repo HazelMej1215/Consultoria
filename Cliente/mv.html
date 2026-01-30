@@ -7,17 +7,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
- 
   <header class="header">
-    <div class="logo">
-      <h1>Halo</h1>
-    </div>
+    <a class="logo" href="index.html" aria-label="Ir a inicio">
+      <img src="img/halo.jpeg" alt="Halo Consultoría">
+    </a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Navegación principal">
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="mv.html">Misión y Visión</a></li>
+        <li><a href="mv.html" aria-current="page">Misión y Visión</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="proyectos.html">Proyectos</a></li>
         <li><a href="servicios.html">Servicios</a></li>
@@ -26,34 +24,45 @@
     </nav>
   </header>
 
-  
-  <main>
-    <section class="mv">
+  <main class="container">
+    <section class="page-head">
       <h2>Misión y Visión</h2>
+      <p>Definimos con claridad nuestro propósito y hacia dónde nos dirigimos.</p>
+    </section>
 
-      <article class="mision">
+    <section class="grid-2">
+      <article class="card">
         <h3>Misión</h3>
         <p>
-          Nuestra misión es brindar soluciones de consultoría eficientes,
-          innovadoras y confiables, apoyando a las organizaciones en la
-          optimización de sus procesos y en la toma de decisiones estratégicas.
+          Brindar soluciones de consultoría eficientes, innovadoras y confiables, apoyando a las
+          organizaciones en la optimización de procesos y en la toma de decisiones estratégicas.
         </p>
       </article>
 
-      <article class="vision">
+      <article class="card">
         <h3>Visión</h3>
         <p>
-          Ser una consultoría reconocida por su excelencia, compromiso y
-          capacidad de adaptación, convirtiéndonos en un aliado estratégico
-          para el crecimiento y desarrollo sostenible de nuestros clientes.
+          Ser una consultoría reconocida por su excelencia, compromiso y capacidad de adaptación,
+          convirtiéndonos en un aliado estratégico para el crecimiento y desarrollo sostenible de
+          nuestros clientes.
         </p>
       </article>
+    </section>
+
+    <section class="card highlight">
+      <h3>Valores</h3>
+      <div class="chips">
+        <span class="chip">Compromiso</span>
+        <span class="chip">Innovación</span>
+        <span class="chip">Calidad</span>
+        <span class="chip">Transparencia</span>
+        <span class="chip">Trabajo en equipo</span>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Halo Consultoría. Todos los derechos reservados.</p>
+    <p>© 2026 Halo Consultoría. Realizado por Hazel Mejia y Guadalupe Alondra.</p>
   </footer>
-
 </body>
 </html>
